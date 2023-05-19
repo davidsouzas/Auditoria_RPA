@@ -130,7 +130,7 @@
             <av:PointCollection x:Key="ConnectorLocation">300,201.60000000000002 300,238.4</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Faturamento PJ" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence DisplayName="Faturamento PJ" sap:VirtualizedContainerService.HintSize="1025.6,3673.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Dias" />
             <Variable x:TypeArguments="sd:DataTable" Name="Dt_Geral" />
@@ -156,13 +156,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CopyFile>
-          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope - Faturamento" sap:VirtualizedContainerService.HintSize="963.2,3326.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturamento_Geral\Planilha de Auditoria Anual - 2023.xlsx">
+          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope - Faturamento" sap:VirtualizedContainerService.HintSize="963.2,3189.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturamento_Geral\Planilha de Auditoria Anual - 2023.xlsx">
             <ui:ExcelApplicationScope.Body>
               <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="929.6,3216.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="929.6,3080" sap2010:WorkflowViewState.IdRef="Sequence_20">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -221,13 +221,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MultipleAssign>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Dt_Geral]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="867.2,2770.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Dt_Geral]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="867.2,2633.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="833.6,2654.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="833.6,2517.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="Robo" />
                             <Variable x:TypeArguments="x:String" Name="Data" />
@@ -239,7 +239,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="771.2,2542.4" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="771.2,2405.6" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
                             <ui:IfElseIf.ConditionBlocks>
                               <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                 <ui:IfElseIfBlock BlockType="If" Condition="[Contador &lt;Total_Rows]">
@@ -275,7 +275,7 @@
                                             </ui:IfElseIfBlock>
                                             <ui:IfElseIfBlock BlockType="Else">
                                               <ui:IfElseIfBlock.Then>
-                                                <Sequence DisplayName="Corpo Senao" sap:VirtualizedContainerService.HintSize="608,895.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                <Sequence DisplayName="Corpo Senao" sap:VirtualizedContainerService.HintSize="512,895.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                                   <Sequence.Variables>
                                                     <Variable x:TypeArguments="x:String" Name="Hora_Final" />
                                                   </Sequence.Variables>
@@ -285,7 +285,7 @@
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="545.6,226.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="449.6,226.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                                                     <ui:MultipleAssign.AssignOperations>
                                                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -397,7 +397,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </ui:MultipleAssign>
-                                                  <Sequence DisplayName="Inserir Na Planilha" sap:VirtualizedContainerService.HintSize="545.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                  <Sequence DisplayName="Inserir Na Planilha" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -449,7 +449,7 @@
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </ui:ExcelApplicationScope>
                                                   </Sequence>
-                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="545.6,96.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Dia &quot; + Data + &quot; Concluido / &quot; + Total_Lancs.ToString + &quot; Lançamentos Feitos&quot;]" />
+                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,96.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Dia &quot; + Data + &quot; Concluido / &quot; + Total_Lancs.ToString + &quot; Lançamentos Feitos&quot;]" />
                                                 </Sequence>
                                               </ui:IfElseIfBlock.Then>
                                             </ui:IfElseIfBlock>
@@ -467,20 +467,12 @@
                                 </ui:IfElseIfBlock>
                                 <ui:IfElseIfBlock BlockType="Else">
                                   <ui:IfElseIfBlock.Then>
-                                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="512,988" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="512,851.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,96.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Ultima Linha&quot;]">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:LogMessage>
                                       <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="449.6,226.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
                                         <ui:MultipleAssign.AssignOperations>
                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
@@ -697,7 +689,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">300,321.6 300,348.4</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Faturamento IEL" sap:VirtualizedContainerService.HintSize="800,2170.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence DisplayName="Faturamento IEL" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="Dt_IEL" />
               </Sequence.Variables>

@@ -20764,9 +20764,9 @@
     "restore": {
       "projectUniqueName": "Main",
       "projectName": "Main",
-      "projectPath": "C:\\Users\\david.souza\\Documents\\UiPath\\Main\\.local",
+      "projectPath": "C:\\Users\\david.souza\\Documents\\GitHub\\Auditoria_RPA\\Main\\.local",
       "packagesPath": "C:\\Users\\david.souza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\david.souza\\Documents\\UiPath\\Main\\.local",
+      "outputPath": "C:\\Users\\david.souza\\Documents\\GitHub\\Auditoria_RPA\\Main\\.local",
       "fallbackFolders": [
         "C:\\Users\\david.souza\\AppData\\Local\\UiPath\\NugetFallbackFolder"
       ]
