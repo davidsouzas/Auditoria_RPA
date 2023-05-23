@@ -20757,8 +20757,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\david.souza\\.nuget\\packages\\": {},
-    "C:\\Users\\david.souza\\AppData\\Local\\UiPath\\NugetFallbackFolder": {}
+    "C:\\Users\\david.souza\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -20766,10 +20765,7 @@
       "projectName": "Main",
       "projectPath": "C:\\Users\\david.souza\\Documents\\GitHub\\Auditoria_RPA\\Main\\.local",
       "packagesPath": "C:\\Users\\david.souza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\david.souza\\Documents\\GitHub\\Auditoria_RPA\\Main\\.local",
-      "fallbackFolders": [
-        "C:\\Users\\david.souza\\AppData\\Local\\UiPath\\NugetFallbackFolder"
-      ]
+      "outputPath": "C:\\Users\\david.souza\\Documents\\GitHub\\Auditoria_RPA\\Main\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {

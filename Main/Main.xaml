@@ -126,11 +126,11 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">200,118.4</av:Point>
-            <av:Size x:Key="ShapeSize">200,83.2</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,201.60000000000002 300,238.4</av:PointCollection>
+            <av:Size x:Key="ShapeSize">200,127.2</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,245.60000000000002 300,276.4</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Faturamento PJ" sap:VirtualizedContainerService.HintSize="1025.6,3673.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence sap2010:Annotation.AnnotationText="Execução Diaria&#xD;&#xA;" DisplayName="Faturamento PJ" sap:VirtualizedContainerService.HintSize="1025.6,3717.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Dias" />
             <Variable x:TypeArguments="sd:DataTable" Name="Dt_Geral" />
@@ -146,16 +146,34 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:CopyFile ContinueOnError="{x:Null}" Destination="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturamento_Geral" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="963.2,52.8" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="\\Fbp101-021\c\Faturamento_PJ_Completo_Robo\Planilha de Auditoria Anual - 2023.xlsx">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="963.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="449.6,267.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:CopyFile ContinueOnError="{x:Null}" Destination="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturamento_Geral" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="387.2,155.2" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="\\Fbp101-021\c\Faturamento_PJ_Completo_Robo\Planilha de Auditoria Anual - 2023.xlsx">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CopyFile>
+              </Sequence>
+            </ui:CommentOut.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-          </ui:CopyFile>
+          </ui:CommentOut>
           <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope - Faturamento" sap:VirtualizedContainerService.HintSize="963.2,3189.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturamento_Geral\Planilha de Auditoria Anual - 2023.xlsx">
             <ui:ExcelApplicationScope.Body>
               <ActivityAction x:TypeArguments="ui:WorkbookApplication">
@@ -397,7 +415,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </ui:MultipleAssign>
-                                                  <Sequence DisplayName="Inserir Na Planilha" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                  <Sequence DisplayName="Inserir Na Planilha" sap:VirtualizedContainerService.HintSize="545.6,749.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -684,21 +702,22 @@
           <FlowStep x:Name="__ReferenceID0">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <av:Point x:Key="ShapeLocation">200,238.4</av:Point>
-                <av:Size x:Key="ShapeSize">200,83.2</av:Size>
-                <av:PointCollection x:Key="ConnectorLocation">300,321.6 300,348.4</av:PointCollection>
+                <av:Point x:Key="ShapeLocation">200,276.4</av:Point>
+                <av:Size x:Key="ShapeSize">200,127.2</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">300,403.59999999999997 300,448.4</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Faturamento IEL" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence sap2010:Annotation.AnnotationText="Execução Mensal&#xD;&#xA;" DisplayName="Faturamento IEL" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="Dt_IEL" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachFileX DisplayName="For Each File In Folder" Folder="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturmaento_IEL" sap:VirtualizedContainerService.HintSize="737.6,1735.2" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+              <ui:ForEachFileX DisplayName="For Each File In Folder" Folder="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Faturamento_IEL" sap:VirtualizedContainerService.HintSize="737.6,1735.2" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                 <ui:ForEachFileX.Body>
                   <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                     <ActivityAction.Argument1>
@@ -850,16 +869,181 @@
               <FlowStep x:Name="__ReferenceID1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">200,348.4</av:Point>
-                    <av:Size x:Key="ShapeSize">200,83.2</av:Size>
+                    <av:Point x:Key="ShapeLocation">200,448.4</av:Point>
+                    <av:Size x:Key="ShapeSize">200,114.4</av:Size>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Posição" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence sap2010:Annotation.AnnotationText="Execução Sob Solicitação" DisplayName="Posição" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="737.6,1749.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_8" InstanceCachePeriod="3000" WorkbookPath="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Posicao\Indicadores Posição.xlsx">
+                    <ui:ExcelApplicationScope.Body>
+                      <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="704,1640" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="Robo_Pos" />
+                            <Variable x:TypeArguments="x:String" Name="Data_Pos" />
+                            <Variable x:TypeArguments="x:String" Name="Hora_Inicio_Pos" />
+                            <Variable x:TypeArguments="x:String" Name="Hora_Final_Pos" />
+                            <Variable x:TypeArguments="sd:DataTable" Name="Dt_Pos" />
+                            <Variable x:TypeArguments="x:Int32" Name="Size_Pos" />
+                            <Variable x:TypeArguments="x:String" Name="Tempo_Execucao" />
+                            <Variable x:TypeArguments="x:Int32" Name="contador" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExcelReadRange AddHeaders="True" DataTable="[Dt_Pos]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="641.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_8" SheetName="Plan1">
+                            <ui:ExcelReadRange.Range>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:ExcelReadRange.Range>
+                          </ui:ExcelReadRange>
+                          <Assign sap:VirtualizedContainerService.HintSize="641.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Dt_Pos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="641.6,1306.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="608,1190.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="Num_Itens" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="545.6,288.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+                                    <ui:MultipleAssign.AssignOperations>
+                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_39">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[Robo_Pos]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">Posição</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[Data_Pos]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">[Dt_Pos(contador)(3).ToString.SubString(0,10)]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_41">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[Hora_Inicio_Pos]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">[Dt_Pos(contador)(2).ToString.Substring(11)]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[Hora_Final_Pos]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">[Dt_Pos(contador)(3).ToString.SubString(11)]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_44">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[Tempo_Execucao]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">[Dt_Pos(contador)(4).ToString]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_46">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[Num_Itens]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">[Dt_Pos(contador)(5).ToString]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_45">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[contador + 1]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                      </scg:List>
+                                    </ui:MultipleAssign.AssignOperations>
+                                  </ui:MultipleAssign>
+                                  <Sequence DisplayName="Inserir na Planilha" sap:VirtualizedContainerService.HintSize="545.6,749.6" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="483.2,637.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_9" InstanceCachePeriod="3000" WorkbookPath="C:\Users\david.souza\Desktop\David\Arquivos\RPA\Execucoes\Execucoes_Geral.xlsx">
+                                      <ui:ExcelApplicationScope.Body>
+                                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="449.6,528" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="sd:DataTable" Name="Dt_Execs_Pos" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:ExcelReadRange AddHeaders="True" DataTable="[Dt_Execs_Pos]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_9" SheetName="execs">
+                                              <ui:ExcelReadRange.Range>
+                                                <InArgument x:TypeArguments="x:String">
+                                                  <Literal x:TypeArguments="x:String" Value="" />
+                                                </InArgument>
+                                              </ui:ExcelReadRange.Range>
+                                            </ui:ExcelReadRange>
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Robo_Pos, Data_Pos, Hora_Inicio_Pos, Hora_Final_Pos, Num_Itens, Tempo_Execucao}]" DataTable="[Dt_Execs_Pos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
+                                            <ui:ExcelWriteRange AddHeaders="True" DataTable="[Dt_Execs_Pos]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_4" SheetName="execs">
+                                              <ui:ExcelWriteRange.StartingCell>
+                                                <InArgument x:TypeArguments="x:String">
+                                                  <Literal x:TypeArguments="x:String" Value="" />
+                                                </InArgument>
+                                              </ui:ExcelWriteRange.StartingCell>
+                                            </ui:ExcelWriteRange>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ExcelApplicationScope.Body>
+                                    </ui:ExcelApplicationScope>
+                                  </Sequence>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                          </ui:ForEachRow>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ExcelApplicationScope.Body>
+                  </ui:ExcelApplicationScope>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="737.6,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Posição Concluido&quot;]" />
                 </Sequence>
               </FlowStep>
             </FlowStep.Next>
